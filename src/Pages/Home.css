@@ -1,0 +1,44 @@
+.firstHeading,.firstPara{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.firstHeading h1{
+    margin-bottom: 0;
+}
+
+.firstPara{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px 0px 15px 10px;
+}
+.firstPara p{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .firstHeading h1{
+        font-size: 2rem;
+    }
+    .firstPara p{font-size: 20px;
+    padding-top: 10px;}
+
+    /* .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        background: black;
+        width: 100%;
+        padding-top: 33px;
+        padding-bottom: 33px;
+        padding-left: 20px;
+        padding-right: 0px;
+    } */
+}

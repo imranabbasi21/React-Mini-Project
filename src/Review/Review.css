@@ -1,0 +1,73 @@
+.ReviewHeading h2{
+  font-size: 2rem;
+}
+.Reviewcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cardReview {
+  width: 35%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  min-height: 330px;
+  max-height: 330px;
+  position: relative;
+}
+.cardReview-image {
+  width: 100%;
+  height: 70%;
+  object-fit: fill;
+  position: relative;
+  block-size: auto;
+  transition: 1.5s;
+}
+.cardReview-image:hover {
+  transition: 1.5s;
+  transform: scale(1.5);
+}
+.cardReview-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  width: 30%;
+  text-align: center;
+  width: 100%;
+  bottom: 30px;
+  background-color: rgb(185 0 4 / 35%);
+}
+/* Media Queries for responsiveness */
+
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+  .Reviewcontainer {
+    grid-template-columns: 1fr 1fr; /* Two cards per row */
+  }
+
+  .cardReview-text {
+    font-size: 0.9rem; /* Slightly smaller text on tablet */
+  }
+  .cardReview {width: 100%;max-height: 200px;min-height: 200px;}
+}
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+  .Reviewcontainer {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .cardReview-text {
+    font-size: 0.8rem; /* Smaller text for mobile */
+    padding: 10px; /* Less padding on mobile */
+  }
+
+  .ReviewHeading h2 {
+    font-size: 1.5rem; /* Adjusting the heading size for mobile */
+  }
+}
+ 

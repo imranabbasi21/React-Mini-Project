@@ -1,0 +1,166 @@
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-icons-container a {
+  color: red;
+  background-color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+.social-icons-container a i {
+  background-color: white;
+  font-size: 24px; 
+}
+.social-icons-container a:hover {
+  color: #fff; 
+}
+.footer {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      padding: 20px;
+      justify-content: space-between;
+      position: relative;
+      max-height: 350px;
+      margin-top: 130px;
+  }
+  .footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    background: url(https://kia.car.com/assets/sliderbanners/bg-black-friday.jpg) center bottom / cover no-repeat;
+    z-index: 1;
+    background-position: center;
+  }
+  .footer:before {
+    content: "";
+    display: block;
+    background: url(https://kia.car.com/assets/sliderbanners/bg-black-friday.jpg) center bottom / cover no-repeat;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+  }
+  .footer-section {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .footer-section h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: White; 
+    border-bottom: 1px solid #f69312;
+    width: 110px;
+    z-index: 2;
+    position: absolute;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .footer-section li {
+    margin: 8px 0;
+    font-size: 0.9em;
+    z-index: 2;
+}
+  
+  .footer-section li:hover {
+    text-decoration: underline;
+    color:#f69312;
+    cursor: pointer;
+  }
+
+/* Social Media Icons */
+/* .social-icons-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.social-icons-container a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons-container a:hover {
+  color: #ff5c5c;
+} */
+
+/* Media Queries for Responsiveness */
+
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+
+  .footer-section ul {
+    font-size: 0.9rem;
+  }
+
+  .social-icons-container {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-section {
+    margin: 5px 0;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer-section ul {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .social-icons-container {
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .social-icons-container a {
+    font-size: 1.2rem;
+  }
+  .footer::after{
+    bottom: -293px;
+  }
+}

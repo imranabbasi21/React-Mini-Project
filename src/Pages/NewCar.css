@@ -1,0 +1,30 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-top: 130px;
+  background-image: linear-gradient(180deg, #29302f, #29302f 70%, #f0f2f1 0);
+}
+.NewCarcontent {
+  display: flex;
+  flex-wrap: inherit;
+}
+.text-container {
+  width: 50%;
+  padding: 20px;
+}
+.text-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: White;
+}
+.image-container {
+  width: 50%;
+}
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
